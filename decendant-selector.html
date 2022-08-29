@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decendant Selector</title>
+    <style>
+        /* Decending Selector*/
+
+        div h2{COLOR:red;
+        }
+
+        div h3{
+            color:green;
+            font-size: 33px
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h2>Parent</h2>
+        <div class="child">
+            <h3>Child 1</h3>
+            <div class="grand-child"></div>
+            <div class="grand-child"></div>
+            <div class="grand-child"></div>
+        </div>
+        <p class="child">
+            <h3>Child 2</h3>
+            <div class="grand-child"></div>
+            <div class="grand-child"></div>
+            <div class="grand-child"></div>
+
+        </p>
+        <div class="child">
+            <h3>Child 3</h3>
+            <div class="grand-child"></div>
+            <div class="grand-child"></div>
+            <div class="grand-child"></div>
+    </div>
+    <p class="child">
+        <h3>Child 4
+            <div class="grand-child"></div>
+            <div class="grand-child"></div>
+            <div class="grand-child"></div>
+        </h3>
+
+    </p>
+    <p class="child">
+         <h3>Child 5</h3>
+         <div class="grand-child"></div>
+         <div class="grand-child"></div>
+         <div class="grand-child"></div>
+    </p>
+    <h3>
+        Last Born
+    </h3>
+
+    
+
+    </div>
+</body>
+</html>

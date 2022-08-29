@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Css Class</title>
+
+    <!--Internal style-->
+
+    <style>
+        .box{
+            width:60;
+            height:400px;
+            border:2px solid black;
+        }
+    </style>
+
+    <!--Linking External Style Sheet-->
+
+    <link rel="stylesheet" href="./Css/welcome.css">
+
+    <link rel="stylesheet" href="./Css/colors.css">
+    <link rel="stylesheet" href="./Css/header.css">
+    <link rel="stylesheet" href="./Css/body.css">
+    <link rel="stylesheet" href="./Css/footer.css">
+
+
+    <!--CSS Import Rule-->
+
+    <style>
+        @import url('./Css/welcome.css');
+    </style>
+
+    <style>
+        @import url('./Css/colors.css');
+        @import url('./Css/header.css');
+        @import url('./Css/body.css');
+        @import url('./Css/footer.css');
+    </style>
+
+</head>
+<body>
+    <!--Inline Style-->
+    <div style="width: 80%">
+        <button style="width: 200px; height: 40px"> Submit Form</button>
+
+    </div>
+
+    <div class="box">
+        <button>Second button</button>
+
+    </div>
+</body>
+</html>

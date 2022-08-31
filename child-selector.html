@@ -15,12 +15,14 @@
 
         div.parent > div {
             height: 100px;
-            border: 2px solid black
+            border: 2px solid black;
+           
         }
 
-        div.parent > div >h3{
+        div.parent > div.child1,div.child2  {
             color:red; 
             font-size: 19px;
+            background-color: black;
         }
 
         .parent h3{
@@ -35,9 +37,9 @@
         <h2> Parents </h2>
         <div class="child1">
             <h3>Child 1</h3>
-            <div class="grand-child"></div>
-            <div class="grand-child"></div>
-            <div class="grand-child"></div>
+            <div class="grand-child">1</div>
+            <div class="grand-child">2</div>
+            <div class="grand-child">3</div>
         </div>
         <div class="child2">
             <h3>Child 2</h3>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        div[data-color]{
+            height: 150px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+        div[data-color="blue"] {
+            color: blue;
+        }
+        div[data-color="green"] {
+            color: green;
+        }
+        div[data-color="red"] {
+            color: red;
+        }
+        div[tags~="software"] {
+            font-size: 15px;
+        }
+        div[tags^="co"] {
+            outline:10px solid red;
+        }
+        div[tags$="et"] {
+            outline: 10px solid red;
+        }
+        div[tags$="ir"] {
+            outline: 10px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div data-color="blue" tags="computer software programming">
+        <h3>Software Designs</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, exercitationem quae. Voluptatum accusantium, adipisci architecto ratione hic praesentium et sit aut quisquam est ad commodi rem voluptas quasi voluptate expedita!
+        </p>
+
+    </div>
+    <div data-color="green" tags="airline aviation jet">
+        <h3>Aviation Industry</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores rerum voluptates accusantium aliquid id ducimus accusamus, itaque commodi, corporis repellendus aspernatur nisi a consequatur, in odio temporibus voluptate molestias.
+        </p>
+
+    </div>
+    <div data-color="red" tags="bedding table chair">
+        <h3>Funiture Company</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci id placeat voluptatem animi quidem commodi dolorum, saepe illo ipsam aliquid molestiae harum tempore deserunt magni atque! Quaerat quam non consequatur.
+        </p>
+
+    </div>
+</body>
+</html>
